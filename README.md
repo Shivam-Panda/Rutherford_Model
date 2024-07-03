@@ -3,7 +3,7 @@
 The goal of this project is to show the Rutherford's experiments with both Thomson's model and Rutherford's model, and show how it is evident that Rutherford's model is the only model that could explain the large angle deflections of alpha particles when shot into the gold foil
 
 # Project Tools
-- Python along with Pygame will be used for the entire applications
+- Python along with Tkinter will be used for the entire applications
 
 # Background Information
 

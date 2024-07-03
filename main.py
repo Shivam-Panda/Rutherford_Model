@@ -1,25 +1,11 @@
-import pygame
+from tkinter import *
+from tkinter import ttk
 
-pygame.init()
-screen = pygame.display.set_mode((1280, 720))
-clock = pygame.time.Clock()
-running = True
+root = Tk()
 
-while running:
-    # poll for events
-    # pygame.QUIT event means the user clicked X to close your window
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            running = False
+frame = ttk.Frame(root, padding=50)
+frame.grid()
+ttk.Label(frame, text="Hello World").grid(column=0, row=0)
+ttk.Button(frame, text="Quit", command=root.destroy).grid(column=1, row=0)
 
-    # fill the screen with a color to wipe away anything from last frame
-    screen.fill("purple")
-
-    # RENDER YOUR GAME HERE
-
-    # flip() the display to put your work on screen
-    pygame.display.flip()
-
-    clock.tick(60)  # limits FPS to 60
-
-pygame.quit()
+root.mainloop()
